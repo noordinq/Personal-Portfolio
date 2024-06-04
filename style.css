@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #fffdd0;
+    min-height: 15%;
+}
+nav ul{
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#navItems {
+    float: right;
+    display: flex;
+    
+}
