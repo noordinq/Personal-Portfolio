@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 nav {
     background-color: #fffdd0;
     min-height: 15%;
@@ -15,6 +19,36 @@ nav ul{
 
 #navItems {
     float: right;
+    display: flex;   
+}
+
+.introDiv {
+    height: 85%;
+    background-color: #e7f2c5;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introSection {
+    height: 50%;
+}
+#introTextDiv {
+    text-align: center;
+    max-width: 60%;
+    float: left;
+    margin-top: 60px;
+}
+#introTextDiv h1 {
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+#imageDiv {
+    background-color: aliceblue;
+    width: 25%;
+    height: 90%;
+    float: right;
 }
