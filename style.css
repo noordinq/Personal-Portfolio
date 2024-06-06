@@ -101,11 +101,17 @@ body {
 }
 
 #imageDiv {
-    background-color: aliceblue;
     width: 30%;
-    height: 90%;
+    height: 100%;
     float: right;
     margin-left: 40px;
+    padding: 0;
+}
+
+#profile {
+    position: relative;
+    left: 30px;
+    padding-bottom: 50px;
 }
 
 #quickLinks {
