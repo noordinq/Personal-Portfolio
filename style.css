@@ -2,29 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color1: #bedbb2;
+    --bg-color2: #e7f2c5;
+    --bg-color3: #fefccf;
+    --txt-color: #000;
+    --small-line: #fff;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
 }
 
-nav {
-    background-color: #fffdd0;
-    min-height: 15%;
-}
-nav ul{
-    list-style-type: none;
-    flex-direction: row;
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background-image: linear-gradient(var(--bg-color1), var(--bg-color2));
+    display: flex;
+    align-items: center;
+    z-index: 100;
 }
 
-#navItems {
-    float: right;
-    display: flex;   
+.logo {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--txt-color);
+    font-weight: 500;
+    margin-right: 4rem;
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    background-color: var(--small-line);
+    bottom: -6px;
+}
+
+#darkMode-icon {
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .introDiv {
     height: 85%;
-    background-color: #e7f2c5;
+    background-image: linear-gradient(var(--bg-color2), var(--bg-color3));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,23 +70,49 @@ nav ul{
 }
 
 .introSection {
-    height: 50%;
+    height: 60%;
 }
 #introTextDiv {
     text-align: center;
-    max-width: 60%;
+    max-width: 65%;
     float: left;
     margin-top: 60px;
 }
 #introTextDiv h1 {
     font-weight: 900;
     font-style: normal;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cvBtn {
+    display: inline-block;
+    margin-top: 1.3rem;
+    padding: 1.2rem 2.0rem;
+    background-color: var(--bg-color1);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem gray;
+    color: darkslategrey;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+.cvBtn:hover {
+    background-color: transparent;
 }
 
 #imageDiv {
     background-color: aliceblue;
-    width: 25%;
+    width: 30%;
     height: 90%;
     float: right;
+    margin-left: 40px;
 }
+
+#quickLinks {
+    margin-top: 40px;
+}
+#quickLinks a{
+    font-size: 3rem;
+    color: var(--txt-color);
+}
+
