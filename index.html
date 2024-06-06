@@ -4,27 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noordin Qureish | Software Developer</title>
+
+    <!-- font -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-        <nav>
-            <div>
-                <a id="nameBrand" href="index.html">NQN</a>
-                <div id="navItems">
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div> 
-            </div>
+    <header class="header">
+        <a href="#" class="logo">NQN</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
     </header>
 
     <main>
@@ -32,27 +32,28 @@
             <div class="introSection">
                 <div id="introTextDiv">
                     <h1>Hi, i'm Noordin Qureish</h1>
-                    <h3>A detailed, result-oriented Junior Front-End Developer who is currently based in Nairobi, Kenya.</h3>
+                    <p class="bio">A <strong>detailed</strong>, <strong>result-oriented</strong> Junior Front-End Developer who is currently based in Nairobi, Kenya.</p>
+                    <a href="#" class="cvBtn">Download CV</a>
                 </div>
                 <div id="imageDiv"><img></div>
             </div>
             <div id="quickLinks">
-                <a>LinkedIn</a>
-                <a>Github</a>
+                <a href="https://www.linkedin.com/in/noordin-qureish-264b60224/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="https://github.com/noordinq" target="_blank"><i class="bx bxl-github"></i></a>
             </div>
         </div>
-        <div id="aboutDiv">
+        <div class="aboutDiv">
             <h2>Get to know me!</h2>
             <p>I am a junior front-end developer who is passionate about building functional and clean websites for effective user experience. <br>
                 My current Tech Stack is HTML, CSS and JavaScript. <br>
                 My hobbies include: Photo Manipulation, Video Editing & some bit of walking.
             </p>  
         </div>
-        <div id="projectsDiv">
+        <div class="projectsDiv">
             <h2>Projects</h2>
             <p>Here you will find of my personal projects that i have worked on throughout my experience.</p>
         </div>
-        <div id="contactDiv">
+        <div class="contactDiv">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me and i will get back to you as soon as possible.</p>
             <div>
