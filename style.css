@@ -10,6 +10,7 @@
     --bg-color1: #bedbb2;
     --bg-color2: #e7f2c5;
     --bg-color3: #fefccf;
+    --bg-color4: #fffae9;
     --txt-color: #000;
     --small-line: #fff;
 }
@@ -71,17 +72,20 @@ body {
 
 .introSection {
     height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#introTextDiv {
-    text-align: center;
-    max-width: 65%;
-    float: left;
-    margin-top: 60px;
+.introSection h1{
+    margin-bottom: 10px;
+    font-weight: bolder;
 }
-#introTextDiv h1 {
-    font-weight: 900;
-    font-style: normal;
-    margin-bottom: 20px;
+.introSection p {
+    margin-bottom: 30px;
+}
+.introSection p i {
+    font-size: 2rem;
 }
 
 .cvBtn {
@@ -100,25 +104,60 @@ body {
     background-color: transparent;
 }
 
-#imageDiv {
-    width: 30%;
-    height: 100%;
-    float: right;
-    margin-left: 40px;
-    padding: 0;
-}
-
-#profile {
-    position: relative;
-    left: 30px;
-    padding-bottom: 50px;
-}
-
 #quickLinks {
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #quickLinks a{
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--txt-color);
+    display: inline-block;
+    background-color: var(--bg-color1);
+    border-radius: .9rem;
+    padding: .5rem 1.0rem;
+    box-shadow: 0 .2rem .5rem gray;
+    margin-right: 15px;
+    transition: .5s ease;
+}
+#quickLinks a:hover{
+    background-color: transparent;
+}
+
+.aboutDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--bg-color3), var(--bg-color4));
+    flex-direction: column;
+    min-height: 60vh;
+    margin: auto;
+}
+.aboutDiv h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.aboutDiv p {
+    max-width: 70%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.aboutDiv i{
+    font-size: 1.7rem;
+}
+
+.projectsDiv {
+    background-image: linear-gradient(var(--bg-color4), var(--bg-color3));
+}
+
+.contactDiv {
+    background-image: linear-gradient(var(--bg-color3), var(--bg-color2));
+}
+
+footer{
+    background-image: linear-gradient(var(--bg-color2), var(--bg-color1));
 }
 
