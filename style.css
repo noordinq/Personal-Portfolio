@@ -59,6 +59,11 @@ body {
     cursor: pointer;
 }
 
+#menu-icon{
+    font-size: 1.5rem;
+    display: none;
+}
+
 .introDiv {
     height: 85%;
     background-image: linear-gradient(var(--bg-color2), var(--bg-color3));
@@ -341,3 +346,70 @@ body {
     margin-right: 1.1rem;
     font-weight: bold;
 }
+
+.iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: var(--bg-color1);
+    border-radius: .8rem;
+    box-shadow: 0 .2rem .5rem gray;
+    transition: .5 ease;
+}
+.iconTop a:hover{
+    background-color: transparent;
+}
+
+.iconTop a i {
+    font-size: 1.5rem;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+@media (max-width : 1200px) {
+    .introDiv {
+        height: 50%;
+    }
+    .cvBtn{
+        padding: 1.4rem 1rem;
+        font-size: .9rem;
+    }
+    #quickLinks {
+        margin-top: 5px;
+    }
+
+    .aboutDiv{
+        min-height: 40vh;
+    }
+
+    .projectContainer .projectBox{
+        height: 20vh;
+    }
+    .projectBox .projectLayer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width : 1024px) {
+    .navbar a {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width : 900px) {
+    .navbar a {
+        margin-right: .5rem;
+    }
+    .projectsDiv .projectContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width : 768px) {
+    .footer{
+        flex-direction: column;
+    }
+}
+
