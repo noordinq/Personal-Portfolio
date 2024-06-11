@@ -386,9 +386,11 @@ body {
     .projectContainer .projectBox{
         height: 20vh;
     }
-    .projectBox .projectLayer{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    .projectLayer h4{
+        font-size: 1.1rem;
+    }
+    .projectLayer p{
+        font-size: .8rem;
     }
 }
 
@@ -413,3 +415,142 @@ body {
     }
 }
 
+@media (max-width : 600px) {
+    #menu-icon{
+        display: block;
+        font-size: 2rem;
+    }
+    #darkMode-icon {
+        position: absolute;
+        right: 20%;
+        font-size: 2rem;
+    }
+    .bx-x {
+        font-size: 2rem;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 7.5%;
+        left: 2.5%;
+        width: 95%;
+        padding: 1rem 3%;
+        background-image: linear-gradient(var(--bg-color2), var(--bg-color1));
+        box-shadow: 0 .2rem .5rem gray;
+        margin: auto;
+        border-radius: 10px;
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        border-bottom: .15rem solid var(--bg-color2);
+    }
+
+    .projectContainer .projectBox{
+        height: 15vh;
+    }
+    .projectBox .projectLayer{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .contactDiv form{
+        max-width: 30rem;
+    }
+    .contactDiv form .formBtn{
+        padding: 1.2rem 1rem;
+    }
+}
+
+@media (max-width: 480px){
+    .aboutDiv p{
+        max-width: 90%;
+    }
+    .projectsDiv p{
+        max-width: 90%;
+    }
+    .projectsDiv .projectContainer{
+        grid-template-columns: 1fr;
+    }
+    .projectContainer .projectBox{
+        height: 27vh;
+    }
+    .projectBox .projectLayer{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .projectLayer h4{
+        font-size: 1.9rem;
+    }
+    .projectLayer p{
+        font-size: 1.5rem;
+    }
+
+    .contactDiv form input {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactDiv form textarea {
+        width: 90%;
+    }
+    .footerText p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px){
+    .introDiv{
+        height: 50%;
+    }
+    .introSection h1{
+        text-align: center;
+    }
+    .introSection p{
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    .introSection p i{
+        font-size: 1.5rem;
+    }
+    .aboutDiv{
+        min-height: 40vh;
+        padding-bottom: 10px;
+    }
+    .aboutDiv p{
+        max-width: 95%;
+        font-size: 1rem;
+    }
+    .projectsDiv{
+        padding-bottom: 5rem;
+        padding-top: .5rem;
+    }
+    .projectsDiv p{
+        font-size: 1rem;
+        max-width: 95%;
+    }
+    .projectContainer .projectBox{
+        height: 20vh;
+    }
+
+    .contactDiv{
+        padding-bottom: 10px;
+    }
+    .contactDiv p{
+        font-size: 1rem;
+        max-width: 95%;
+    }
+    .contactDiv form .formBtn{
+        font-size: .8rem;
+        padding: 1.2rem .7rem;
+    }
+    .footerText p{
+        font-size: 1rem;
+    }
+    
+}
