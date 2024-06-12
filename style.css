@@ -12,7 +12,16 @@
     --bg-color3: #fefccf;
     --bg-color4: #fffae9;
     --txt-color: #000;
+    --txt-color2: #2f4f4f;
     --small-line: #fff;
+}
+
+.dark-mode {
+    --bg-color1: #2f4f4f;
+    --bg-color2: #436666;
+    --bg-color3: #607e7e;
+    --bg-color4: #809595;
+    --txt-color: #bedbb2;
 }
 
 body {
@@ -57,6 +66,7 @@ body {
 #darkMode-icon {
     font-size: 1.4rem;
     cursor: pointer;
+    color: var(--txt-color);
 }
 
 #menu-icon{
@@ -83,12 +93,14 @@ body {
 .introSection h1{
     margin-bottom: 10px;
     font-weight: bolder;
+    color: var(--txt-color);
 }
 .introSection p {
     margin-bottom: 30px;
     font-size: 1.2rem;
     max-width: 80%;
     text-align: center;
+    color: var(--txt-color);
 }
 .introSection p i {
     font-size: 2rem;
@@ -101,7 +113,7 @@ body {
     background-color: var(--bg-color1);
     border-radius: .6rem;
     box-shadow: 0 .2rem .5rem gray;
-    color: darkslategrey;
+    color: var(--txt-color);
     font-size: 1.1rem;
     font-weight: 700;
     transition: .5s ease;
@@ -149,6 +161,8 @@ body {
     text-align: center;
     padding-bottom: 10px;
     font-size: 1.2rem;
+    color: var(--txt-color);
+    font-weight: 600;
 }
 .aboutDiv i{
     font-size: 1.7rem;
@@ -163,6 +177,7 @@ body {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
+    
 }
 .projectsDiv p{
     text-align: center;
@@ -170,6 +185,8 @@ body {
     max-width: 75%;
     margin-bottom: 20px;
     margin: auto;
+    color: var(--txt-color);
+    font-weight: 600;
 }
 .projectsDiv .projectContainer {
     display: grid;
@@ -240,6 +257,7 @@ body {
 }
 .projectLayer a i {
     font-size: 1.4rem;
+    color: var(--txt-color);
 }
 
 .contactDiv {
@@ -263,6 +281,7 @@ body {
     max-width: 75%;
     margin-bottom: 30px;
     margin: auto;
+    color: var(--txt-color);
 }
 .contactDiv form{
     max-width: 40rem;
@@ -300,7 +319,7 @@ body {
     background-color: var(--bg-color1);
     border-radius: .6rem;
     box-shadow: 0 .2rem .5rem gray;
-    color: darkslategrey;
+    color: var(--txt-color);
     font-size: 1.1rem;
     font-weight: 700;
     transition: .5s ease;
@@ -325,7 +344,7 @@ body {
 }
 .footerText p{
     font-size: 1.1rem;
-    color: darkslategrey;
+    color: var(--txt-color);
     font-weight: bold;
 }
 
@@ -333,14 +352,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: darkslategrey;
+    color: var(--txt-color);
     font-weight: bold;
 }
 .footerLinks a {
     margin-right: 1.1rem;
 }
 .footerLinks a:visited{
-    color: darkslategray;
+    color: var(--txt-color);
 }
 .footerLinks p {
     margin-right: 1.1rem;
@@ -363,7 +382,7 @@ body {
 
 .iconTop a i {
     font-size: 1.5rem;
-    color: darkslategrey;
+    color: var(--txt-color);
     font-weight: bold;
 }
 
