@@ -368,35 +368,26 @@ body {
 }
 
 @media (max-width : 1200px) {
-    .introDiv {
-        height: 50%;
-    }
-    .cvBtn{
-        padding: 1.4rem 1rem;
-        font-size: .9rem;
-    }
-    #quickLinks {
-        margin-top: 5px;
-    }
-
-    .aboutDiv{
-        min-height: 40vh;
-    }
-
     .projectContainer .projectBox{
-        height: 20vh;
-    }
-    .projectLayer h4{
-        font-size: 1.1rem;
+        height: 35vh;
     }
     .projectLayer p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width : 1024px) {
     .navbar a {
         margin-right: 1rem;
+    }
+    .projectContainer .projectBox{
+        height: 30vh;
+    }
+    .projectBox .projectLayer{
+        padding-bottom: 2rem;
+    }
+    .projectLayer p{
+        font-size: .8rem;
     }
 }
 
@@ -407,31 +398,45 @@ body {
     .projectsDiv .projectContainer{
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width : 768px) {
+    .projectContainer .projectBox{
+        height: 35vh;
+    }
+    .projectLayer p{
+        font-size: 1rem;
+    }
+    .contactDiv{
+        padding-bottom: 20px;
+    }
     .footer{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .footer .iconTop{
+        margin-bottom: 1.3rem;
+    }
+    .footer .footerLinks{
+        margin-bottom: 1.3rem;
     }
 }
 
-@media (max-width : 600px) {
+@media (max-width : 768px) {
+    .projectContainer .projectBox{
+        height: 33vh;
+    }
     #menu-icon{
         display: block;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     #darkMode-icon {
         position: absolute;
         right: 20%;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .bx-x {
         font-size: 2rem;
     }
-
     .navbar{
         position: absolute;
-        top: 7.5%;
+        top: 15%;
         left: 2.5%;
         width: 95%;
         padding: 1rem 3%;
@@ -450,15 +455,12 @@ body {
         margin: 1rem 0;
         border-bottom: .15rem solid var(--bg-color2);
     }
+}
 
-    .projectContainer .projectBox{
-        height: 15vh;
+@media (max-width : 703px) {
+    .projectLayer p{
+        font-size: .8rem;
     }
-    .projectBox .projectLayer{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
     .contactDiv form{
         max-width: 30rem;
     }
@@ -478,7 +480,7 @@ body {
         grid-template-columns: 1fr;
     }
     .projectContainer .projectBox{
-        height: 27vh;
+        height: 40vh;
     }
     .projectBox .projectLayer{
         padding-top: 3rem;
@@ -490,7 +492,6 @@ body {
     .projectLayer p{
         font-size: 1.5rem;
     }
-
     .contactDiv form input {
         width: 90%;
         margin-left: auto;
@@ -504,10 +505,29 @@ body {
     }
 }
 
-@media (max-width: 360px){
-    .introDiv{
-        height: 50%;
+@media (max-width: 425px) {
+    .projectsDiv{
+        padding-bottom: 7rem;
     }
+    .projectContainer .projectBox{
+        height: 30vh;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projectLayer h4 {
+        font-size: 1.1rem;
+    }
+    .projectLayer p {
+        font-size: .9rem;
+    }
+    .contactDiv form .formBtn{
+        padding: 1.2rem 1rem;
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 375px){
     .introSection h1{
         text-align: center;
     }
@@ -519,8 +539,8 @@ body {
         font-size: 1.5rem;
     }
     .aboutDiv{
-        min-height: 40vh;
-        padding-bottom: 10px;
+        min-height: 60vh;
+        padding-bottom: 20px;
     }
     .aboutDiv p{
         max-width: 95%;
@@ -535,11 +555,14 @@ body {
         max-width: 95%;
     }
     .projectContainer .projectBox{
-        height: 20vh;
+        height: 30vh;
+    }
+    .projectBox .projectLayer{
+        padding-bottom: 1rem;
     }
 
     .contactDiv{
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
     .contactDiv p{
         font-size: 1rem;
